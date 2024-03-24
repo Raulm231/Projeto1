@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-shadow: 10px;
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #E7A58F;
+    box-shadow: 1px 5px 10px #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+header ul{
+    float: right;
+    margin-top: 30px;
+}
+header ul a {
+    text-decoration: none;
+    color: #ccc;
+    margin: 15px;
+}
+header ul a:hover {
+    color: #333;
+}
+.titulo {
+    padding: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+h1 {
+    /* centralizar */
+    text-align: center;
+    /* maiusculo */
+    text-transform: uppercase;
+    /* tamanho da fonte */
+    font-size: 35px;
+}
+
+h2 {
+    /* centralizar */
+    text-align: center;
+    /* maiusculo */
+    text-transform: uppercase;
+    /* tamanho da fonte */
+    font-size: 20px;
+}
+.textoPrincipal {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 100px;
+
+}
+.imagem {
+    margin-bottom: none;
+}
+#trilha {
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: -15px 0 0 0;
+}
+#coluna {
+    padding: 20px;
+    display: flex;
+    margin:  0 25% 0 25%;
+    text-align: center;
+    justify-content: space-between;
+
+
+}
+.text2 {
+    padding: 20px;
+    text-align: left;
+}
+
+#trilha h3 {
+    font-size:x-large;
+}
+#trilha h4 {
+    font-size: large;
+}
+#rodape {
+    text-align: center;
+}
+
+
