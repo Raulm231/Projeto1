@@ -8,6 +8,7 @@ body {
     font-family: Arial, Verdana, Tahoma, sans-serif;
     font-size: 14px;
     padding-top: 100px;
+    width: 100%;
 }
 
 header {
@@ -21,24 +22,29 @@ header {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-sizing: border-box;
+    z-index: 1;
 }
+
 header ul{
     float: right;
     margin-top: 35px;
 }
+
 header img {
-    border-image-source: 10px;
-    
+    size: 50%;
 }
+
 header ul a {
     text-decoration: none;
     color: #535353;
     margin: 15px;
     text-transform: uppercase;
 }
+
 header ul a:hover {
     color: #000000;
 }
+
 .titulo {
     padding: 5%;
     text-align: center;
@@ -62,52 +68,102 @@ h2 {
     /* tamanho da fonte */
     font-size: 20px;
 }
+
 .textoPrincipal {
     text-align: center;
-    background-color: rgb(3, 3, 3);
+    background-color: black;
     color: white;
     padding: 100px;
-
 }
+
 .imagem {
     margin-bottom: none;
 }
+.historia {
+    text-align: left;
+}
+
 #trilha {
     text-align: center;
     background-color: #f1f1f1;
     margin: -15px 0 0 0;
+    width: 100%;
 }
+
 #coluna {
-    padding: 20px;
-    display: flex;
-    margin:  0 25% 0 25%;
+    display: grid;
+    grid-template-columns: repeat(6, 14.66%);
     text-align: center;
-    justify-content: space-between;
-
-
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    border-radius: 1px;
+    width: 100%;
+    background: #ccc;
 }
+
+
 .text2 {
     padding: 20px;
     text-align: left;
+    padding-top: 10px;
+    color: blue;
 }
+
+.text3 {
+    padding: 20px;
+    text-align: left;
+    padding-top: 10px;
+    color: #a5000b;
+}
+.gifmacaco {
+    z-index: 0; 
+}
+
+.gifmorcego {
+    z-index: 0;
+}
+
+.text2 h4 {
+    text-align: center;
+    padding-right: 10px;
+}
+
+.text3 h4 {
+    text-align: center;
+    padding-left: 10px;
+}
+
 
 #trilha h3 {
     font-size:x-large;
 }
+
 #trilha h4 {
     font-size: large;
 }
+
 footer {
     width: 100%;
     background-color: #E7A58F;
     box-shadow: 1px 5px 10px #ccc;
     padding: 10px;
     box-sizing: border-box;
+    bottom: 0;
 }
+
 #rodape {
     text-align: center;
+    width: 100%;
 }
-.download {
+#ficha {
+    text-align: center;
+}
+#ficha li {
+    text-align: left;
+    padding-left: 45%;
+}
+
+.download, .jogue{
     color: black;
     background-color: #E7A58F;
     border-radius: 5px;
@@ -115,12 +171,79 @@ footer {
     padding: 5px;
     transition: 0.2s;
 }
-body #teste1 a:hover{
+body #jogo a:hover{
     transition: 0.4s;
     background-color: #966b5d;
     padding: 7px;
     letter-spacing: 1px;
 }
+
+body #baixar a:hover{
+    transition: 0.4s;
+    background-color: #966b5d;
+    padding: 7px;
+    letter-spacing: 1px;
+}
+#app {
+    background: #535353;
+    box-shadow: #ff0011;
+    border-radius: border-box;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+
+}
+
 html {
     scroll-behavior: smooth;
+}
+.trilha {
+    display: grid;
+    text-align: center;
+
+}
+.trilha audio {
+    padding-left: 42%;
+}
+/* Estilizando a barra de rolagem */
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo */
+}
+
+/* Botão da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do botão */
+    border-radius: 6px; /* Raio das bordas do botão */
+}
+
+/* Hover no botão da barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do botão ao passar o mouse */
+}
+@media only screen and (max-width: 480px) {
+    #coluna{
+        display: inline-block;
+        grid-template-areas: "1";
+    }
+    footer {
+        z-index: 2;
+        bottom: 0;
+    }
+    #ficha li {
+        padding-left: 30%;
+    }
+    .trilha audio {
+        padding-left: 20%;
+    }
+    header {
+        position:absolute;
+    }
+    
+
 }
